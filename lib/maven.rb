@@ -1,6 +1,6 @@
 module Maven
 
-  VERSION = '3.3.9'.freeze
+  VERSION = '3.8.8'.freeze
 
   def self.exec( *args )
     if args.member?( '-Dverbose=true' ) || args.member?( '-Dverbose' ) || args.member?( '-X' )
