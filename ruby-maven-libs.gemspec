@@ -4,7 +4,7 @@ require './lib/maven'
 
 Gem::Specification.new do |s|
   s.name = "ruby-maven-libs"
-  s.version = Maven::VERSION
+  s.version = Maven::VERSION + ".1.pre1"
 
   s.require_paths = ["lib"]
   s.authors = ["Christian Meier"]
