@@ -13,6 +13,17 @@ plugin :dependency do
                                 :outputDirectory => '${project.build.directory}' }])
 end # maven-dependency-plugin
 
+plugin :clean do
+    execute_goals( 'clean',
+                   :id => 'default-clean',
+                   :phase => 'clean',
+                   'filesets' => [ { 'directory' =>  '${project.basedir}/pkg',
+                                     'includes' => [ '*' ] },
+                                   { 'directory' =>  '${project.basedir}/maven-home',
+                                     'includes' => [ '*' ] } ],
+                   'failOnError' =>  'false' )
+end
+
 build do
   resource do
     target_path "${project.basedir}/maven-home"
