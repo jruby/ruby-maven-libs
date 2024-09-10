@@ -18,9 +18,9 @@ plugin :clean do
                    :id => 'default-clean',
                    :phase => 'clean',
                    'filesets' => [ { 'directory' =>  '${project.basedir}/pkg',
-                                     'includes' => [ '*' ] },
+                                     'includes' => [ '**/*' ] },
                                    { 'directory' =>  '${project.basedir}/maven-home',
-                                     'includes' => [ '*' ] } ],
+                                     'includes' => [ '**/*' ] } ],
                    'failOnError' =>  'false' )
 end
 
