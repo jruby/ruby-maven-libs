@@ -32,6 +32,6 @@ build do
 end
 
 # just lock the versions
-properties 'jruby.version': '9.4.5.0'
+properties 'jruby.version': '9.4.14.0'
 
 # vim: syntax=Ruby
